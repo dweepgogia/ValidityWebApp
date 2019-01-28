@@ -16,6 +16,10 @@ Note: Make sure the JAR, normal.csv and advanced.csv files are in the same direc
 
 `docker run -d -p 8080:8080 webapp`
 
+#### Method 3:
+
+`docker run -d -p 8080:8080 dweepgogia/validitywebapplication:1.0`
+
 #### Go to
 
 `localhost:8080/normal`
