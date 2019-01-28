@@ -1,6 +1,6 @@
 # Validity Web App
 
-To run the web application: 
+To run the web application (inside Build directory): 
 
 #### Method 1: 
 
