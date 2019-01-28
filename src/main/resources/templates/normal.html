@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+<table>
+    <tr th:each="duplicates, index : ${AllDuplicates}">
+
+        <td>
+            <table>
+                <tr>
+                    <p><b>Duplicate Set </b><b th:text="${index.index}"></b></p>
+                </tr>
+                <tr th:each="user, index : ${duplicates}">
+                    <td th:text="${user.id}"></td>
+                    <td th:text="${user.first_name}"></td>
+                    <td th:text="${user.last_name}"></td>
+                    <td th:text="${user.company}"></td>
+                    <td th:text="${user.email}"></td>
+                    <td th:text="${user.address}"></td>
+                    <td th:text="${user.address2}"></td>
+                    <td th:text="${user.zip}"></td>
+                    <td th:text="${user.city}"></td>
+                    <td th:text="${user.state_long}"></td>
+                    <td th:text="${user.state}"></td>
+                    <td th:text="${user.phone}"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <table>
+        <tr>
+            <p><b>Non Duplicate Data Set </b></p>
+        </tr>
+        <tr th:each="user, index : ${AllNonDuplicates}">
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.first_name}"></td>
+            <td th:text="${user.last_name}"></td>
+            <td th:text="${user.company}"></td>
+            <td th:text="${user.email}"></td>
+            <td th:text="${user.address}"></td>
+            <td th:text="${user.address2}"></td>
+            <td th:text="${user.zip}"></td>
+            <td th:text="${user.city}"></td>
+            <td th:text="${user.state_long}"></td>
+            <td th:text="${user.state}"></td>
+            <td th:text="${user.phone}"></td>
+        </tr>
+    </table>
+</table>
+</body>
+</html>
